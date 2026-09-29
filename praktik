@@ -7,11 +7,6 @@ $id = $_GET[ 'id' ];
 // Check database
 $getid = "SELECT first_name, last_name FROM users WHERE user_id = '$id';";
 $result = mysqli_query($GLOBALS["___mysqli_ston"], $getid ); // Removed 'or die'
-Требования для лабораторной работы
-1а. или сервер с установленным программным обеспчением 2. Редактор
-кода для языков PHP и выбранного Вами языка для написания программы
-перебора пароля для формы аутентификации. 3. Облачная версия
- или установленная на компьютере
 \
 // Get results
 $num = @mysqli_num_rows( $result ); // The '@' character suppresses errors
